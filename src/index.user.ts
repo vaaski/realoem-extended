@@ -1,7 +1,7 @@
 import "../styles/dark.css"
 import "../styles/index.css"
 
-import { appendBackButton } from "./backto-overview"
+import { editBar } from "./back-to-overview"
 import { appendExternalLinks } from "./external-links"
 import { $ } from "./util"
 
@@ -9,7 +9,5 @@ import { $ } from "./util"
 const partsList = $<HTMLTableElement>("table#partsList")
 if (partsList) appendExternalLinks(partsList)
 
-//append navigation button to go back to overview
-const toplinks = $<HTMLDivElement> (".toplinks")
 const url = window.location.href
-if (toplinks && url.includes("&")) appendBackButton() 
+if (url.includes("&")) editBar()
