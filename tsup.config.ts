@@ -12,7 +12,6 @@ export default defineConfig({
   outExtension: () => ({ js: ".js" }),
   injectStyle: true,
   platform: "browser",
-  minify: true,
   env: {
     BUILT_UNIX: buildDate.getTime().toString(),
     HOSTNAME,
