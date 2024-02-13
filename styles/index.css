@@ -4,3 +4,16 @@
 .roeme-external-link > img {
   max-height: 1em;
 }
+
+/* increase overview thumbnail title size */
+.diag-thumb .title {
+  font-size: 1.25em;
+  margin-top: 0.5em;
+}
+
+.diag-thumb {
+  /* box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.125); */
+  box-shadow: 0 0 0 1px currentColor;
+  border-radius: 15px;
+  margin: 1em;
+}

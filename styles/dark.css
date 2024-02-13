@@ -1,0 +1,26 @@
+html {
+  color-scheme: dark light;
+}
+
+@media (prefers-color-scheme: dark) {
+  html,
+  body {
+    background: #3b3b3b;
+    color: #fefefe;
+  }
+
+  .diag-thumb a img,
+  .mg-thumb a img,
+  #partsimg img {
+    filter: invert(0.77);
+  }
+
+  #partsList tr.r1,
+  #partsList tr.r0 th {
+    background-color: #3b3b3b;
+  }
+
+  #partsList tr.r0 {
+    background-color: #2b2b2b;
+  }
+}

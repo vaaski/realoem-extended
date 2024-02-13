@@ -1,3 +1,4 @@
+import "../styles/dark.css"
 import "../styles/index.css"
 
 import { appendExternalLinks } from "./external-links"
