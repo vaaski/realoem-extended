@@ -4,7 +4,12 @@ const createExternalLink = (link: string, faviconDomain: string) => {
   const a = document.createElement("a")
   a.href = link
   a.target = "_blank"
+  a.title = `search on ${faviconDomain}`
   a.classList.add("roeme-external-link")
+
+  a.addEventListener("click", (event) => {
+    event.stopPropagation()
+  })
 
   const img = document.createElement("img")
   img.src = `https://www.google.com/s2/favicons?sz=64&domain=${faviconDomain}`
@@ -31,6 +36,11 @@ export const appendExternalLinks = (table: HTMLTableElement) => {
       "autodoc.de"
     )
 
-    partNumber.append(googleLink, autodocLink)
+    const leebmannLink = createExternalLink(
+      `https://www.leebmann24.com/de/de/collection/catalog-10000?q=${partNumberText}`,
+      "leebmann24.com"
+    )
+
+    partNumber.append(googleLink, autodocLink, leebmannLink)
   }
 }
