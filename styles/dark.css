@@ -5,22 +5,30 @@ html {
 @media (prefers-color-scheme: dark) {
   html,
   body {
-    background: #3b3b3b;
+    background: #242424;
     color: #fefefe;
   }
 
   .diag-thumb a img,
   .mg-thumb a img,
   #partsimg img {
-    filter: invert(0.77);
+    filter: invert(0.86);
   }
 
   #partsList tr.r1,
   #partsList tr.r0 th {
-    background-color: #3b3b3b;
+    background-color: #242424;
   }
 
   #partsList tr.r0 {
     background-color: #2b2b2b;
+  }
+
+  #partsList tr.r1.posselect {
+    background-color: #9d4e4e;
+  }
+
+  #partsList tr.r0.posselect {
+    background-color: #b35b5b;
   }
 }
