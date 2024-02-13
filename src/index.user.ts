@@ -6,7 +6,7 @@ import { appendExternalLinks } from "./external-links"
 import { $ } from "./util"
 
 const assdiv = $<HTMLDivElement>(".gad-tall-right")
-if (assdiv) assdiv.remove();
+if (assdiv) assdiv.remove()
 
 //append external links to parts list
 const partsList = $<HTMLTableElement>("table#partsList")
