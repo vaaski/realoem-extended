@@ -1,0 +1,6 @@
+.roeme-external-link {
+  margin-left: 0.5em;
+}
+.roeme-external-link > img {
+  max-height: 1em;
+}
